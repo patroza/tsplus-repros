@@ -1,0 +1,11 @@
+{
+  "name": "tsplus-repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "https://cdn.jsdelivr.net/npm/@tsplus/installer@0.0.149/compiler/typescript.tgz",
+    "@tsplus/stdlib": "^0.2.8",
+    "date-fns": "^2.29.3"
+  }
+}
