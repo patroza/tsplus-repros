@@ -1,0 +1,6 @@
+{
+  "importMap": {
+    "^(.*)/apps/(.*)/_src/(.*)\\.[cm]?ts$": "@tsplus-test/$2/$3",
+    "^(.*)/packages/(.*)/_src/(.*)\\.[cm]?ts$": "@tsplus-test/$2/$3"
+  }
+}

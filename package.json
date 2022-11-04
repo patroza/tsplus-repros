@@ -1,11 +1,21 @@
 {
-  "name": "tsplus-repro",
+  "name": "@tsplus-test/repro",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "typescript": "https://cdn.jsdelivr.net/npm/@tsplus/installer@0.0.150/compiler/typescript.tgz",
+    "@tsconfig/strictest": "^1.0.2",
     "@tsplus/stdlib": "^0.2.8",
-    "date-fns": "^2.29.3"
+    "date-fns": "^2.29.3",
+    "typescript": "https://cdn.jsdelivr.net/npm/@tsplus/installer@0.0.150/compiler/typescript.tgz"
+  },
+  "scripts": {
+    "compile": "tsc --build ./tsconfig.all.json"
+  },
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
   }
 }

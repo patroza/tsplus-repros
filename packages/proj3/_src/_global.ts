@@ -1,0 +1,1 @@
+//import "@tsplus-test/proj1/_global"

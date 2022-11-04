@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": [],
+  "exclude": [
+    "**/.jest-cache",
+    "**/node_modules",
+    "**/build",
+    "**/lib",
+    "**/dist",
+    "**/.*"
+  ],
+  "references": [
+    {
+      "path": "packages/proj3"
+    },
+    {
+      "path": "packages/proj2"
+    },
+    {
+      "path": "packages/proj1"
+    },
+  ]
+}

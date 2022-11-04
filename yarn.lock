@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@tsconfig/strictest@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@tsconfig/strictest/-/strictest-1.0.2.tgz#aff98cd714dbd1722c9229eed2dcf3fc6fd30fd9"
+  integrity sha512-IRKlC8cnP7zMz1SDBjyIVyPapkEGWLZ6wkF6Z8T+xU80P9sO5uGXlIUvtzjx+7ehPJRWxkB6CeIDwUfyqNtYkQ==
+
 "@tsplus/stdlib@^0.2.8":
   version "0.2.8"
   resolved "https://registry.yarnpkg.com/@tsplus/stdlib/-/stdlib-0.2.8.tgz#060380d9d16d5ae059750c469f52e4257a1b6e66"

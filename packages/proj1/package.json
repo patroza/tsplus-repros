@@ -1,0 +1,18 @@
+{
+  "name": "@tsplus-test/proj1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./*": {
+      "default": "./dist/*.js"
+    },
+    "./model": {
+      "default": "./dist/model.js"
+    },
+    "./function": {
+      "default": "./dist/function.js"
+    }
+  }
+}
