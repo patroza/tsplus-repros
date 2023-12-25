@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 patchedDependencies:
+  '@effect/schema@0.56.1':
+    hash: 3zbehe3tb3nsvjov5h26sspqxu
+    path: patches/@effect__schema@0.56.1.patch
   fast-check@3.15.0:
     hash: gmhutzas2jzobvkhr72gjyjori
     path: patches/fast-check@3.15.0.patch
@@ -12,13 +15,16 @@ patchedDependencies:
 dependencies:
   '@effect/schema':
     specifier: ^0.56.1
-    version: 0.56.1(effect@2.0.0-next.62)(fast-check@3.15.0)
+    version: 0.56.1(patch_hash=3zbehe3tb3nsvjov5h26sspqxu)(effect@2.0.0-next.62)(fast-check@3.15.0)
   effect:
     specifier: ^2.0.0-next.62
     version: 2.0.0-next.62
   fast-check:
     specifier: ^3.15.0
     version: 3.15.0(patch_hash=gmhutzas2jzobvkhr72gjyjori)
+  nanoid:
+    specifier: ^5.0.4
+    version: 5.0.4
   typescript:
     specifier: npm:@effect-app/typescript@5.4.0-tsplus.202311222
     version: /@effect-app/typescript@5.4.0-tsplus.202311222
@@ -31,7 +37,7 @@ packages:
     hasBin: true
     dev: false
 
-  /@effect/schema@0.56.1(effect@2.0.0-next.62)(fast-check@3.15.0):
+  /@effect/schema@0.56.1(patch_hash=3zbehe3tb3nsvjov5h26sspqxu)(effect@2.0.0-next.62)(fast-check@3.15.0):
     resolution: {integrity: sha512-cfEyHLXPdzSKzJU/yYrPjFd0iVHPydh+NT0sgTe4bzXbcvOsKZuvQ86cAAwXN7lxY0N5cPes9ACxUxTdkEaNlw==}
     peerDependencies:
       effect: 2.0.0-next.62
@@ -40,6 +46,7 @@ packages:
       effect: 2.0.0-next.62
       fast-check: 3.15.0(patch_hash=gmhutzas2jzobvkhr72gjyjori)
     dev: false
+    patched: true
 
   /effect@2.0.0-next.62:
     resolution: {integrity: sha512-fJhLzf5oouL4WZP314ZJgZz5Bel7OHTY+YFxO06sW1mSvqJz0s28y7jDHr5zhtTNM1YRvzbeLYUYfNaJYKqx1A==}
@@ -52,6 +59,12 @@ packages:
       pure-rand: 6.0.4
     dev: false
     patched: true
+
+  /nanoid@5.0.4:
+    resolution: {integrity: sha512-vAjmBf13gsmhXSgBrtIclinISzFFy22WwCYoyilZlsrRXNIHSwgFQ1bEdjRwMT3aoadeIF6HMuDRlOxzfXV8ig==}
+    engines: {node: ^18 || >=20}
+    hasBin: true
+    dev: false
 
   /pure-rand@6.0.4:
     resolution: {integrity: sha512-LA0Y9kxMYv47GIPJy6MI84fqTd2HmYZI83W/kM/SkKfDlajnZYfmXFTxkbY+xSBPkLJxltMa9hIkmdc29eguMA==}
