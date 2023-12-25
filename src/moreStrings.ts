@@ -5,7 +5,7 @@ import { fromBrand, nominal } from "./ext.js"
 import { type B, S } from "./schema.js"
 import { NonEmptyString } from "./strings.js"
 import type { NonEmptyString255Brand, NonEmptyString2k, NonEmptyStringBrand } from "./strings.js"
-import { Refinement } from "effect/Predicate"
+import type { Refinement } from "effect/Predicate"
 
 /**
  * A string that is at least 1 character long and a maximum of 50.
@@ -52,7 +52,7 @@ export interface UrlBrand extends Simplify<B.Brand<"Url"> & NonEmptyStringBrand>
 export type Url = NonEmptyString & UrlBrand
 
 const isUrl: Refinement<string, Url> = (s: string): s is Url => {
-  return true //validator.default.isURL(s, { require_tld: false })
+  return !!s //validator.default.isURL(s, { require_tld: false })
 }
 
 export const Url = NonEmptyString.pipe(

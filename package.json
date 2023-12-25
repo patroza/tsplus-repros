@@ -9,13 +9,36 @@
       "fast-check@3.15.0": "patches/fast-check@3.15.0.patch"
     }
   },
+  "exports": {
+    "./arbitrary": {
+      "import": {
+        "types": "./build/dist/arbitrary.d.ts",
+        "default": "./build/dist/arbitrary.js"
+      },
+      "require": {
+        "types": "./build/dist/arbitrary.d.ts",
+        "default": "./_cjs/arbitrary.cjs"
+      }
+    },
+    "./ext": {
+      "import": {
+        "types": "./build/dist/ext.d.ts",
+        "default": "./build/dist/ext.js"
+      },
+      "require": {
+        "types": "./build/dist/ext.d.ts",
+        "default": "./_cjs/ext.cjs"
+      }
+    }
+  },
   "scripts": {
+    "clean": "rm -rf ./build",
     "build": "tsc -p ./tsconfig.json"
   },
   "dependencies": {
     "effect": "^2.0.0-next.62",
     "fast-check": "^3.15.0",
-    "typescript": "https://cdn.jsdelivr.net/npm/@tsplus/installer@0.0.182/compiler/typescript.tgz",
+    "typescript": "npm:@effect-app/typescript@5.4.0-tsplus.202311222",
     "@effect/schema": "^0.56.1"
   }
 }

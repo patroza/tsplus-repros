@@ -1,4 +1,6 @@
 {
   "importMap": {
+    "^(.*)/src/(.*)\\.[cm]?[tj]s$": "tsplus-repro/$2",
+    ".pnpm/[^\/]*/node_modules/(.*)": "$1"
   }
 }

@@ -1,6 +1,6 @@
-import { ParseOptions } from "@effect/schema/AST";
+import type { ParseOptions } from "@effect/schema/AST";
 import { B, S } from "./schema.js";
-import { Either, Option } from "effect";
+import type { Either, Option } from "effect";
 
 /**
  * @tsplus fluent effect/schema/Schema __call

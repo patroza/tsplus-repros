@@ -20,10 +20,16 @@ dependencies:
     specifier: ^3.15.0
     version: 3.15.0(patch_hash=gmhutzas2jzobvkhr72gjyjori)
   typescript:
-    specifier: https://cdn.jsdelivr.net/npm/@tsplus/installer@0.0.182/compiler/typescript.tgz
-    version: '@cdn.jsdelivr.net/npm/@tsplus/installer/0.0.182/compiler/typescript.tgz'
+    specifier: npm:@effect-app/typescript@5.4.0-tsplus.202311222
+    version: /@effect-app/typescript@5.4.0-tsplus.202311222
 
 packages:
+
+  /@effect-app/typescript@5.4.0-tsplus.202311222:
+    resolution: {integrity: sha512-QZQC5/bU2uG4TUmgCVkEYZM8buFDisGgvuO6NUOXVWZXjQRPkOv4YHlMPBVNi+DmW3k1O7oNWmkHRm7MO+ddNg==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: false
 
   /@effect/schema@0.56.1(effect@2.0.0-next.62)(fast-check@3.15.0):
     resolution: {integrity: sha512-cfEyHLXPdzSKzJU/yYrPjFd0iVHPydh+NT0sgTe4bzXbcvOsKZuvQ86cAAwXN7lxY0N5cPes9ACxUxTdkEaNlw==}
@@ -49,12 +55,4 @@ packages:
 
   /pure-rand@6.0.4:
     resolution: {integrity: sha512-LA0Y9kxMYv47GIPJy6MI84fqTd2HmYZI83W/kM/SkKfDlajnZYfmXFTxkbY+xSBPkLJxltMa9hIkmdc29eguMA==}
-    dev: false
-
-  '@cdn.jsdelivr.net/npm/@tsplus/installer/0.0.182/compiler/typescript.tgz':
-    resolution: {tarball: https://cdn.jsdelivr.net/npm/@tsplus/installer@0.0.182/compiler/typescript.tgz}
-    name: typescript
-    version: 5.4.0-tsplus.20231203
-    engines: {node: '>=14.17'}
-    hasBin: true
     dev: false
