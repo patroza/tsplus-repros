@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "target": "ES2022",
+    "module": "Node16",
+    "skipLibCheck": true,
+    "moduleResolution": "Node16",
+    "downlevelIteration": true,
+    "strict": true,
+    "tsPlusConfig": "./tsplus.config.json",
+    "tsPlusTypes": [
+      "./vendor/effect-schema-tsplus.json",
+    ],
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}

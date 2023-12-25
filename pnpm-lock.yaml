@@ -1,0 +1,60 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+patchedDependencies:
+  fast-check@3.15.0:
+    hash: gmhutzas2jzobvkhr72gjyjori
+    path: patches/fast-check@3.15.0.patch
+
+dependencies:
+  '@effect/schema':
+    specifier: ^0.56.1
+    version: 0.56.1(effect@2.0.0-next.62)(fast-check@3.15.0)
+  effect:
+    specifier: ^2.0.0-next.62
+    version: 2.0.0-next.62
+  fast-check:
+    specifier: ^3.15.0
+    version: 3.15.0(patch_hash=gmhutzas2jzobvkhr72gjyjori)
+  typescript:
+    specifier: https://cdn.jsdelivr.net/npm/@tsplus/installer@0.0.182/compiler/typescript.tgz
+    version: '@cdn.jsdelivr.net/npm/@tsplus/installer/0.0.182/compiler/typescript.tgz'
+
+packages:
+
+  /@effect/schema@0.56.1(effect@2.0.0-next.62)(fast-check@3.15.0):
+    resolution: {integrity: sha512-cfEyHLXPdzSKzJU/yYrPjFd0iVHPydh+NT0sgTe4bzXbcvOsKZuvQ86cAAwXN7lxY0N5cPes9ACxUxTdkEaNlw==}
+    peerDependencies:
+      effect: 2.0.0-next.62
+      fast-check: ^3.13.2
+    dependencies:
+      effect: 2.0.0-next.62
+      fast-check: 3.15.0(patch_hash=gmhutzas2jzobvkhr72gjyjori)
+    dev: false
+
+  /effect@2.0.0-next.62:
+    resolution: {integrity: sha512-fJhLzf5oouL4WZP314ZJgZz5Bel7OHTY+YFxO06sW1mSvqJz0s28y7jDHr5zhtTNM1YRvzbeLYUYfNaJYKqx1A==}
+    dev: false
+
+  /fast-check@3.15.0(patch_hash=gmhutzas2jzobvkhr72gjyjori):
+    resolution: {integrity: sha512-iBz6c+EXL6+nI931x/sbZs1JYTZtLG6Cko0ouS8LRTikhDR7+wZk4TYzdRavlnByBs2G6+nuuJ7NYL9QplNt8Q==}
+    engines: {node: '>=8.0.0'}
+    dependencies:
+      pure-rand: 6.0.4
+    dev: false
+    patched: true
+
+  /pure-rand@6.0.4:
+    resolution: {integrity: sha512-LA0Y9kxMYv47GIPJy6MI84fqTd2HmYZI83W/kM/SkKfDlajnZYfmXFTxkbY+xSBPkLJxltMa9hIkmdc29eguMA==}
+    dev: false
+
+  '@cdn.jsdelivr.net/npm/@tsplus/installer/0.0.182/compiler/typescript.tgz':
+    resolution: {tarball: https://cdn.jsdelivr.net/npm/@tsplus/installer@0.0.182/compiler/typescript.tgz}
+    name: typescript
+    version: 5.4.0-tsplus.20231203
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: false
